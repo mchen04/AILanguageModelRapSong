@@ -1,10 +1,11 @@
 # SongsmithAI
 
 ## Description
-SongsmithAI is a project designed to generate song lyrics using deep learning models. It leverages TensorFlow and Keras for model building and training, Spotipy for fetching song data from Spotify, and LyricsGenius to scrape lyrics from Genius.
+SongsmithAI is a cutting-edge project aimed at creating song lyrics with the help of deep learning. Utilizing the powerful TensorFlow and Keras libraries, it constructs and trains models to mimic the art of songwriting. Integration with Spotify's Spotipy library and the LyricsGenius API allows SongsmithAI to gather a vast dataset of songs for analysis and learning.
 
 ## Installation
-Before running the code, ensure that you have Python installed on your system along with the following packages:
+Ensure you have Python and the following packages installed:
+
 - numpy
 - tensorflow
 - matplotlib
@@ -12,31 +13,30 @@ Before running the code, ensure that you have Python installed on your system al
 - spotipy
 - langdetect
 
-Use the following command to install the required packages:
+Install the required packages with the command:
 ```bash
 pip install numpy tensorflow matplotlib lyricsgenius spotipy langdetect
-Usage
 
-To run the SongsmithAI, execute the main script in the terminal:
+Usage
+Run SongsmithAI via the command line by typing:
 
 bash
 Copy code
 python main.py
-You will be prompted to enter the names of artists for which you want to generate lyrics. After entering the artist names, the script will:
+Follow the prompts to input artist names. The script will:
 
-Clear the previous lyrics data.
-Fetch and store new lyrics from the specified artists.
-Train a deep learning model with the collected lyrics.
-Allow you to generate new song lyrics based on a starting phrase you provide.
+Clear existing lyric data.
+Fetch and store lyrics from the specified artists.
+Train a neural network with the newly acquired lyrics.
+Enable lyric generation based on your input phrase.
 Configuration
-Modify the following files as needed:
+Update these files as needed:
 
-keys.txt: Add your Spotify and Genius API keys here.
-lyrics.txt: This file will be automatically populated with lyrics fetched by the script.
+keys.txt: Insert your Spotify and Genius API credentials.
+lyrics.txt: This file will be auto-filled with lyrics by the script.
 Components
-train_model.py: Contains the logic for building and training the LSTM model.
-fetch_lyrics.py: Handles fetching and cleaning lyrics from Genius and Spotify.
-main.py: The main driver script that orchestrates the training and lyric generation process.
+train_model.py: Constructs and trains the LSTM neural network.
+fetch_lyrics.py: Acquires and sanitizes lyrics data.
+main.py: Orchestrates the training and generation processes.
 Contribution
-Contributions to SongsmithAI are welcome. Please ensure that you follow the code style and provide documentation for your changes.
-
+Contributions are encouraged! Please adhere to the project's coding standards and document any changes you make.
